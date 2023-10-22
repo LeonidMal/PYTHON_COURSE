@@ -10,3 +10,41 @@
 # конца сделать это задание. Они решили так: у кого
 # будет меньше ошибок в коде, тот и выиграл спор. За
 # помощью товарищи обратились к Вам, студентам.
+
+# Ваня:             2 ОШИБКИ
+
+n = int(input())
+max_number = n
+while n != 0:
+    n = int(input())
+    if max_number < n:
+        max_number = n
+print(max_number)
+
+# n = int(input())
+# max_number = 1000
+# while n != 0:
+#     n = int(input())
+#     if max_number > n:
+#         max_number = n
+# print(max_number)
+
+
+# Петя:            4 ОШИБКИ
+
+n = int(input())
+max_number = n
+while n != 0:
+    n = int(input())
+    if max_number < n:
+        max_number = n
+print(max_number)
+
+# n = int(input())
+# max_number = -1
+# while n < 0:
+#     n = int(input())
+#     if max_number < n:
+#         n = max_number
+# print(n)
+
