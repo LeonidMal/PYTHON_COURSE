@@ -132,3 +132,20 @@
 #         counter += 1
 
 # print(counter)
+
+#--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+# input = 'a a a b c a a d c d d'                             # ОТСЛЕЖМВАНИЕ, СКОЛЬКО РАЗ КАЖДЫЙ СИМВОЛ ВСТРЕЧАЕТСЯ В СТРОКЕ И ДОБАВЛЕНИЕ '_N'
+
+# text = input.split()
+# unLetters = {}
+
+# for el in text:
+#     if el in unLetters:
+#         print(f"{el}_{unLetters[el]}", end = ' ')
+#         unLetters[el] += 1
+#     else:
+#         print(el, end = ' ')
+#         unLetters[el] = 1
