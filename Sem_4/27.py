@@ -13,9 +13,5 @@
 text = "She sells sea shells on the sea shore The shells that she sells are sea shells I'm sure.So if she sells sea shells on the sea shore I'm sure that the shells are sea shore shells"
 
 letMulti = set(text.lower().replace('.', ' ').split())
-result = 0
 
-for ind in letMulti:
-     result += 1
-
-print(result)
+print(len(letMulti))
