@@ -11,7 +11,7 @@
 # Output: 4 3
 
 
-value = 2
+value = 5
 
 def nums(n):
     num = input('введите число')
