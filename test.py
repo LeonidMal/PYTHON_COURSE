@@ -211,22 +211,52 @@
 
 # print(f(a, b))
 
-  # -----------------------------------------------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------------------------------------------------------------
 
 
-# В списке хранятся числа. Нужно выбрать только чётные числа и составить список пар
-# (число; квадрат числа).
+# На выходе:                                                     # СОСТАВЛЕНИЕ ТАБЛИЦЫ АРИФМЕТИЧЕСКОГО ДЕЙСТВИЯ (*, +, -, /)
 
-# Пример: 1 2 3 5 8 15 23 38
-# Получить: [(2, 4), (8, 64), (38, 1444)]
+# 1 2 3
+# 2 4 6 
+# 3 6 9
 
-nums = [1, 2, 3, 5, 8, 15, 23, 38]
-res = []
 
-f = lambda a: a * a
-  
-for i in nums:
-    if i % 2 == 0:
-      res.append((i, f(i)))
+# def print_operation_table(operation, num_rows, num_columns):
+#     if num_rows < 2 or num_columns < 2:
+#         print('ОШИБКА! Размерности таблицы должны быть больше 2!')
+#     else:
+#         header = ' '.join([str(i) for i in range(1, num_columns + 1)])
+#         print(header)
+#         for i in range(2, num_rows + 1):
+#             row = [str(i)] + [str(operation(i, j)) for j in range(2, num_columns + 1)]
+#             print(' '.join(row))
 
-print(res)
+# print_operation_table(lambda x, y: x + y, 4, 4)
+
+# ---------------------------------------------------------------
+
+# def print_operation_table(operation, num_rows, num_columns):
+#     list_rows = [i for i in range(1, num_rows + 1)]
+#     list_columns = [i for i in range(2, num_columns + 1)]
+#     nums = [i for i in list_rows]
+
+#     if num_rows > 2:
+#         for i in list_columns:
+#             nums.append(i)
+#             for j in range(len(list_rows) - 1):
+#                 nums.append(operation(i, list_rows[j + 1]))
+
+#         for p in range(len(nums)):
+#                 counter = p + 1
+#                 print(nums[p], end =' ')
+#                 if counter % num_columns == 0:
+#                     print()
+#     else:
+#         print('ОШИБКА! Размерности таблицы должны быть больше 2!')
+
+# print_operation_table(lambda x, y: x + y, 4, 4)
+
+# -------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
