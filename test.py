@@ -260,3 +260,12 @@
 
 
 
+# count = 0                    =
+# for l in stroka[i]:          =
+#     if l in glasnye:         =        countGlasnye.append(len([l for l in stroka[i] if l in glasnye]))
+#         count += 1           =
+# countGlasnye.append(count)   =
+
+# -------------------------------------------------------------------------------------------------------------------------------------------
+
+

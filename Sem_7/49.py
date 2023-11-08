@@ -20,15 +20,21 @@
 
 orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
 
-def find_farthest_orbit(x):
-    squares = [3.14 * i[0] * i[1] for i in orbits]
-    max = 0
-    ind = 0
-    for i in range(len(squares)):
-        if squares[i] > max:
-            max = squares[i]
-            ind = i
-    return x[ind]
+print(max(orbits, key = lambda x: x[0] * x[1] * x[0] != x[1]))
 
-print(find_farthest_orbit(orbits))
+# ---------------------------------------------------------------
+
+# orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
+
+# def find_farthest_orbit(x):
+#     squares = [3.14 * i[0] * i[1] for i in x]
+#     max = 0
+#     ind = 0
+#     for i in range(len(squares)):
+#         if squares[i] > max and x[i][0] != x[i][1]:
+#             max = squares[i]
+#             ind = i
+#     return x[ind]
+
+# print(find_farthest_orbit(orbits))
 
